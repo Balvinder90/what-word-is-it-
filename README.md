@@ -8,3 +8,5 @@ A guess the word game built using HTML, CSS and vanilla JavaScript.
 5. 25+ words in an array
 6. BEM convention
 7. Clean and simple UI
+8. CSS Transition effects
+9. CSS Animations
