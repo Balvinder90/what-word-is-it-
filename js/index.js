@@ -82,7 +82,7 @@ inputLetter.addEventListener("keyup", (e) => {
 // CLICK FUNCTIONS
 buttons.addEventListener("click", (e) => {
   // IF GUESS-WORD IS CLICKED
-  if ((e.target.className === "buttons__guess") & !gameOver) {
+  if ((e.target.className === "buttons__guess") && !gameOver) {
     e.preventDefault();
     if (soundMP3.canPlayType("audio/mpeg")) {
       soundMP3.volume = 0.8;
@@ -119,7 +119,7 @@ buttons.addEventListener("click", (e) => {
     e.preventDefault();
   }
   // IF REVEAL-WORD IS CLICKED
-  if ((e.target.className === "buttons__reveal") & !isReveal) {
+  if ((e.target.className === "buttons__reveal") && !isReveal) {
     isReveal = !isReveal;
     e.preventDefault();
     if (soundMP3.canPlayType("audio/mpeg")) {
@@ -195,7 +195,7 @@ const check = () => {
   const userInput = form.word.value.toLowerCase();
   for (let i = 0; i < word.word.length; i++) {
     if (
-      (word.word.toLowerCase()[i] === userInput) &
+      (word.word.toLowerCase()[i] === userInput) &&
       (word.word.toLowerCase(i)[i] !== " ")
     ) {
       divBorder[i].innerText = word.word[i];
