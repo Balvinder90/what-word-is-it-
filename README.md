@@ -1,6 +1,8 @@
 # what-word-is-it-
 A guess the word game built using HTML, CSS and vanilla JavaScript.
 
+## https://balvindersinghportfolio.netlify.app/sites/whatword/
+
 1. Modern JavaScript
 2. SASS
 3. Responsive
